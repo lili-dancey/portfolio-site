@@ -1,0 +1,102 @@
+body {background-color: rgb(251, 251, 251);}
+
+/* 
+
+*/
+
+body {
+    background-color: #F0EFEB;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #191919;
+  }
+  
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.45em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 18;
+    font-weight: 600;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    color: #19747E;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover,
+  a:focus {
+    color: #10555F;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  a:visited { /* visited link */
+    color: #4B8A93;
+  }
+  a:active { /* selected link */
+    color: #325458;
+  }
+
+  /*button styling*/
+  .button {
+    display: inline-block;
+    background-color: #19747E;
+    color: #ebebeb; 
+    font-weight: 300;
+    letter-spacing: 3%;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.2s opacity;
+  }
+  .button:hover {
+    opacity: 0.8; /* Reduces the opacity to 80% */
+    text-decoration: none;
+  }
+  .button:active {
+    color: #ffffff;
+  }
+  .button:visited { /* visited link */
+    color: #d0d0d0;
+  }
+
+  /* Contact button */
+  .button.contact {
+    background-color: transparent;
+    color: #19747E;
+    text-transform: uppercase;
+  }
+  .button.contact:hover {
+    background-color: #10555F;
+    color: #ebebeb;
+    padding: 12px;
+    border: none
+  }
+  .button.contact:active {
+    background-color: #325458;
+    color: #ebebeb;
+    padding: 12px;
+    border: none
+  }
