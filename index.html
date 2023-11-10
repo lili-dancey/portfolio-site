@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lili B Dancey</title>
 </head>
   <body>
-    <header>
-      <div>
-          <img src="https://via.placeholder.com/150x50?text=Logo" alt="Lili Dancey">
+    <header id="hero">
+      <!--Logo-->
+			<div class="logo-cont">
+				<a href="index.html">
+					<img
+						src="https://via.placeholder.com/150x50?text=Logo"
+						alt="Lili Dancey logo"
+						class="logo"
+					/>
+				</a>
+			</div> <!--end Logo-->
+      <div> <!--Nav-->
           <nav>
             <ul>
               <li><a href="wisewallet.html">Work</a></li>
@@ -17,10 +31,10 @@
               <li><a href="index.html">Home</a></li>
             </ul>
           </nav>
-      </div>
+      </div> <!--end Nav-->
   </header>
-  <main>
-    <div title="main">
+  <main> <!-- start main -->
+    <div id="home-about"> <!-- start home about -->
         <section title="intro">
             <h1>
                 Hi, I'm Lili.
@@ -32,17 +46,18 @@
             <p>I am dedicated to translating complex ideas into user-friendly interfaces to enhance user engagement and drive business results.</p>
             <p>I have a deep understanding of user-centered design principles, interaction patterns, and keep up with the latest industry trends. I am adept at wireframing, prototyping, and conducting user testing to refine designs.</p>
         </section>
+    </div> <!-- end home about -->
+    <div><!-- start my work section -->
         <section title="my work">
             <div>
                 <h2>
                     My Work
                 </h2>
                 <div>
-                    <article title="Project 1"> <!-- open row that holds (2) columns for project -->
-                <div>
+                    <article title="Project 1"> <!-- start project 1 -->
                         <div title="column img"> <!-- open first column (used for image) -->
                             <picture>
-                                <source srcset="img/WiseWallet/wisewallet@1" media="(max-width:767px)">
+                                <source srcset="img/WiseWallet/wisewallet@1.png" media="(max-width:767px)">
                                 <img src="img/wisewallet/wisewallet@2.png" alt="The cover image for a personal budgeting app called WiseWallet.">
                             </picture>
                         </div> <!-- end first column -->
@@ -56,11 +71,10 @@
                             <p> <!-- open paragraph -->
                               The design process began by understanding the user, creating user flows and through user testing, the main features and screens of the app were created. 
                             </p> <!-- end paragraph -->
-                            <a href="#">View project</a> <!-- button or link label -->
+                            <a href="wisewallet.html" class="button">View More</a> <!-- button or link label -->
                         </div> <!-- end second column -->
-                </div>
-                    <article title="Project 2"> <!-- open row that holds (2) columns for project -->
-                <div>
+                    </article> <!-- end project 1 -->
+                    <article title="Project 2"> <!-- start project 2 -->
                         <div title="column img"> <!-- open first column (used for image) -->
                             <picture>
                                 <source srcset="img/thegoodlav/thegoodlav@1.png" media="(max-width:767px)">
@@ -77,37 +91,36 @@
                             <p> <!-- open paragraph -->
                                 The GoodLav was a conceptual project and as part of the project brief, the app would be a native app for both iOS and Android. This required an understanding of the guidelines for both systems as well as correctly implementing the best practices and components for each. 
                             </p> <!-- end paragraph -->
-                            <a href="#">View project</a> <!-- button or link label -->
-                    </div>
+                            <a href="#" class="button">View More></a> <!-- button or link label -->
                         </div> <!-- end second column -->
-                    <article title="Project 3"> <!-- open row that holds (2) columns for project -->
-                <div>
+                    </article> <!-- end project 2 -->
+                    <article title="Project 3"> <!-- start project 3 -->
                         <div title="column img"> <!-- open first column (used for image) -->
                             <picture>
-                                <source srcset="https://placehold.co/600x400" media="(max-width:767px)">
-                                <img src="https://placehold.co/1200x800" alt="The cover image for an accommodation finding web-app.">
+                              <source srcset="img/v
+                              stayfind/stayfind-mobile@2.png" media="(max-width:767px)">
+                              <img src="img/stayfind/stayfind-tablet@4.png" alt="The cover image for a Restroom-Finding App.">
                             </picture>
                         </div> <!-- end first column -->
                         <div title="column txt"> <!-- open second column (used for text) -->
                             <h3>
                                 StayFind
                             </h3> <!-- heading for the project -->
-                            <p> <!-- open paragraph -->
-                                A short description of the project goes here.
-                            </p> <!-- end paragraph -->
-                            <p> <!-- open paragraph -->
-                                A short description of skills used goes here.
-                            </p> <!-- end paragraph -->
-                            <a href="#">View project</a> <!-- button or link label -->
+                            <p> <!-- open project description -->
+                              StayFind is a location-based web app designed to optimise travel planning. It is an accommodation aggregator web app with up-front pricing, high quality imagery and price breakdowns.
+                            </p> <!-- end project descr. -->
+                            <p> <!-- open project skills -->
+                              The goals behind this was to design a responsive web app for location-based recommendations that meet the requirements of its users and solves the problems they face with existing location-based recommendation apps.
+                            </p> <!-- end project skills -->
+                            <a href="#" class="button">View More</a> <!-- button or link label -->
                         </div> <!-- end second column -->
-                  </div>
-                    </article> <!-- end row that holds (2) columns for project -->
+                    </article> <!-- end project 3 -->
                 </div>
             </div>
         </section>
-    </div>
-</main>
-<footer>
+    </div> <!-- end my work section -->
+</main><!-- end main -->
+<footer id="contact">
   <div> <!-- start footer content -->
       <h2>
           Get In Touch
@@ -117,7 +130,7 @@
               goes here</a>
       </p>
       <div>
-          <a href="mailto:dianovahello@gmail.com">Email me</a>
+          <a href="mailto:lili.dancey@gmail.com" class="button contact">Send me an email</a>
       </div>
       <div> <!--Social Media Layout and Placeholders-->
         <ul>
