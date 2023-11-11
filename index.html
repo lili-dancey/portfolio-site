@@ -11,30 +11,29 @@
     <title>Lili B Dancey</title>
 </head>
   <body>
-    <header id="hero">
+    <header>
       <!--Logo-->
-			<div class="logo-cont">
+			<div class="container">
 				<a href="index.html">
-					<img
+					<img class="logo"
 						src="https://via.placeholder.com/150x50?text=Logo"
 						alt="Lili Dancey logo"
-						class="logo"
 					/>
 				</a>
 			</div> <!--end Logo-->
-      <div> <!--Nav-->
+      <div class="container"> <!--Nav-->
           <nav>
             <ul>
-              <li><a href="wisewallet.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="wisewallet.html"class="nav link">Work</a></li>
+              <li><a href="about.html"class="nav link">About</a></li>
+              <li><a href="#contact"class="nav link">Contact</a></li>
+              <li><a href="index.html"class="nav link">Home</a></li>
             </ul>
           </nav>
       </div> <!--end Nav-->
   </header>
   <main> <!-- start main -->
-    <div id="home-about"> <!-- start home about -->
+    <div class="container" id="hero"> <!-- start home about -->
         <section title="intro">
             <h1>
                 Hi, I'm Lili.
@@ -46,82 +45,75 @@
             <p>I am dedicated to translating complex ideas into user-friendly interfaces to enhance user engagement and drive business results.</p>
             <p>I have a deep understanding of user-centered design principles, interaction patterns, and keep up with the latest industry trends. I am adept at wireframing, prototyping, and conducting user testing to refine designs.</p>
         </section>
-    </div> <!-- end home about -->
-    <div><!-- start my work section -->
-        <section title="my work">
-            <div>
-                <h2>
-                    My Work
-                </h2>
-                <div>
-                    <article title="Project 1"> <!-- start project 1 -->
-                        <div title="column img"> <!-- open first column (used for image) -->
-                            <picture>
-                                <source srcset="img/WiseWallet/wisewallet@1.png" media="(max-width:767px)">
-                                <img src="img/wisewallet/wisewallet@2.png" alt="The cover image for a personal budgeting app called WiseWallet.">
-                            </picture>
-                        </div> <!-- end first column -->
-                        <div title="column txt"> <!-- open second column (used for text) -->
-                            <h3>
-                                WiseWallet
-                            </h3> <!-- heading for the project -->
-                            <p> <!-- open paragraph -->
-                              WiseWallet was a conceptual project created as a solution for users who are looking to save money for a particular goal.
-                            </p> <!-- end paragraph -->
-                            <p> <!-- open paragraph -->
-                              The design process began by understanding the user, creating user flows and through user testing, the main features and screens of the app were created. 
-                            </p> <!-- end paragraph -->
-                            <a href="wisewallet.html" class="button">View More</a> <!-- button or link label -->
-                        </div> <!-- end second column -->
-                    </article> <!-- end project 1 -->
-                    <article title="Project 2"> <!-- start project 2 -->
-                        <div title="column img"> <!-- open first column (used for image) -->
-                            <picture>
-                                <source srcset="img/thegoodlav/thegoodlav@1.png" media="(max-width:767px)">
-                                <img src="img/thegoodlav/thegoodLav@2.png" alt="The cover image for a Restroom-Finding App.">
-                            </picture>
-                        </div> <!-- end first column -->
-                        <div title="column txt"> <!-- open second column (used for text) -->
-                            <h3>
-                                The GoodLav
-                            </h3> <!-- heading for the project -->
-                            <p> <!-- open paragraph -->
-                              The Goodlav was created as a restroom-finding solution. Providing information about the locations of restrooms, including their proximity, accessibility, and any associated amenities.
-                            </p> <!-- end paragraph -->
-                            <p> <!-- open paragraph -->
-                                The GoodLav was a conceptual project and as part of the project brief, the app would be a native app for both iOS and Android. This required an understanding of the guidelines for both systems as well as correctly implementing the best practices and components for each. 
-                            </p> <!-- end paragraph -->
-                            <a href="#" class="button">View More></a> <!-- button or link label -->
-                        </div> <!-- end second column -->
-                    </article> <!-- end project 2 -->
-                    <article title="Project 3"> <!-- start project 3 -->
-                        <div title="column img"> <!-- open first column (used for image) -->
-                            <picture>
-                              <source srcset="img/v
-                              stayfind/stayfind-mobile@2.png" media="(max-width:767px)">
-                              <img src="img/stayfind/stayfind-tablet@4.png" alt="The cover image for a Restroom-Finding App.">
-                            </picture>
-                        </div> <!-- end first column -->
-                        <div title="column txt"> <!-- open second column (used for text) -->
-                            <h3>
-                                StayFind
-                            </h3> <!-- heading for the project -->
-                            <p> <!-- open project description -->
-                              StayFind is a location-based web app designed to optimise travel planning. It is an accommodation aggregator web app with up-front pricing, high quality imagery and price breakdowns.
-                            </p> <!-- end project descr. -->
-                            <p> <!-- open project skills -->
-                              The goals behind this was to design a responsive web app for location-based recommendations that meet the requirements of its users and solves the problems they face with existing location-based recommendation apps.
-                            </p> <!-- end project skills -->
-                            <a href="#" class="button">View More</a> <!-- button or link label -->
-                        </div> <!-- end second column -->
-                    </article> <!-- end project 3 -->
-                </div>
-            </div>
-        </section>
+  </div> <!-- end home about -->
+    <div id="work"> <!-- start my work -->
+      <div class="container">
+        <h2>My Work</h2>
+          <div class="row">
+                <div title="column txt"> <!-- open second column (used for text) -->
+                    <h3>
+                        WiseWallet
+                    </h3> <!-- heading for the project -->
+                    <p> <!-- open paragraph -->
+                      WiseWallet was a conceptual project created as a solution for users who are looking to save money for a particular goal.
+                    </p> <!-- end paragraph -->
+                    <p> <!-- open paragraph -->
+                      The design process began by understanding the user, creating user flows and through user testing, the main features and screens of the app were created. 
+                    </p> <!-- end paragraph -->
+                    <a href="wisewallet.html" class="button">View More</a> <!-- button or link label -->
+                </div> <!-- end second column -->
+            </article> <!-- end project 1 -->
+          </div>
+          <div class="row">
+            <article title="Project 2"> <!-- start project 2 -->
+                <div title="column img"> <!-- open first column (used for image) -->
+                    <picture>
+                        <source srcset="img/thegoodlav/thegoodlav@1.png" media="(max-width:767px)">
+                        <img src="img/thegoodlav/thegoodLav@2.png" alt="The cover image for a Restroom-Finding App.">
+                    </picture>
+                </div> <!-- end first column -->
+                <div title="column txt"> <!-- open second column (used for text) -->
+                    <h3>
+                        The GoodLav
+                    </h3> <!-- heading for the project -->
+                    <p> <!-- open paragraph -->
+                      The Goodlav was created as a restroom-finding solution. Providing information about the locations of restrooms, including their proximity, accessibility, and any associated amenities.
+                    </p> <!-- end paragraph -->
+                    <p> <!-- open paragraph -->
+                        The GoodLav was a conceptual project and as part of the project brief, the app would be a native app for both iOS and Android. This required an understanding of the guidelines for both systems as well as correctly implementing the best practices and components for each. 
+                    </p> <!-- end paragraph -->
+                    <a href="#" class="button">View More></a> <!-- button or link label -->
+                </div> <!-- end second column -->
+            </article> <!-- end project 2 -->
+          </div>
+          <div class="row">
+            <article title="Project 3"> <!-- start project 3 -->
+                <div title="column img"> <!-- open first column (used for image) -->
+                    <picture>
+                      <source srcset="img/v
+                      stayfind/stayfind-mobile@2.png" media="(max-width:767px)">
+                      <img src="img/stayfind/stayfind-tablet@4.png" alt="The cover image for a Restroom-Finding App.">
+                    </picture>
+                </div> <!-- end first column -->
+                <div title="column txt"> <!-- open second column (used for text) -->
+                    <h3>
+                        StayFind
+                    </h3> <!-- heading for the project -->
+                    <p> <!-- open project description -->
+                      StayFind is a location-based web app designed to optimise travel planning. It is an accommodation aggregator web app with up-front pricing, high quality imagery and price breakdowns.
+                    </p> <!-- end project descr. -->
+                    <p> <!-- open project skills -->
+                      The goals behind this was to design a responsive web app for location-based recommendations that meet the requirements of its users and solves the problems they face with existing location-based recommendation apps.
+                    </p> <!-- end project skills -->
+                    <a href="#" class="button">View More</a> <!-- button or link label -->
+                </div> <!-- end second column -->
+            </article> <!-- end project 3 -->
+          </div>
+      </div>
     </div> <!-- end my work section -->
 </main><!-- end main -->
-<footer id="contact">
-  <div> <!-- start footer content -->
+<footer id="footer">
+  <div class="container"> <!-- start footer content -->
       <h2>
           Get In Touch
       </h2>
