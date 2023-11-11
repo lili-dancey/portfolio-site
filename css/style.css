@@ -3,6 +3,76 @@ body {background-color: rgb(251, 251, 251);}
 /* 
 
 */
+* {
+    box-sizing: border-box;
+  }
+  
+  .center {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  header {
+    background-color: #10555F;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+  }
+
+  .nav.link {
+    color: #f5fbff;
+  }
+
+  .nav.link:active {
+    color: #ffffff;
+  }
+
+  .nav.link:visited {
+    color: #f5fbff;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    width: 100;
+  }
+
+  nav > ul > li > a {
+    color: #10555F;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  nav > ul > li > a:hover {
+    color: #ffffff;
+  }
+  nav > ul > li > a:active {
+    color: #e1e1e1;
+  }
+
+  #hero {
+    background-color: #4c828a;
+    color: #ffffff;
+    padding: 20px 20px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #hero h1 {
+    line-height: 1;
+  }
+
+  main {
+    padding-top: 168.02px;
+  }
 
 body {
     background-color: #F0EFEB;
@@ -66,7 +136,7 @@ body {
     background-color: #19747E;
     color: #ebebeb; 
     font-weight: 300;
-    letter-spacing: 3%;
+    
     padding: 10px;
     border-radius: 3px;
     transition: 0.2s opacity;
@@ -84,13 +154,13 @@ body {
 
   /* Contact button */
   .button.contact {
-    background-color: transparent;
+    background-color: #e1e1e1;
     color: #19747E;
     text-transform: uppercase;
   }
   .button.contact:hover {
-    background-color: #10555F;
-    color: #ebebeb;
+    background-color: #e2e2e2;
+    color: #10555F;
     padding: 12px;
     border: none
   }
@@ -99,4 +169,28 @@ body {
     color: #ebebeb;
     padding: 12px;
     border: none
+  }
+
+  /* Layout Styling */
+
+  .container {
+    padding: 0 20px;
+  }
+  .row {
+    margin: 25px 0; 
+  }
+  #work .row { 
+    padding-bottom: 25px; border-bottom: 0.5px solid #467a82;
+  }
+
+  #footer {
+    background-color: #10555F;
+    color: #F0EFEB;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #footer > ul {
+    list-style-type: none;
+    padding: 0;
   }
