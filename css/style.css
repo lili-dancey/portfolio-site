@@ -4,13 +4,18 @@ body {background-color: #FAFBFB;
 /* 
 
 */
-  * {
-    box-sizing: border-box;
-  }
-
   .container {
     display: grid;
+    
   }
+
+
+
+  .row {
+    display: grid;
+  }
+
+
 
   body {
     background-color: #FAFBFB;
@@ -35,7 +40,6 @@ body {background-color: #FAFBFB;
 
 
   /* Top Bar*/
-
   .logo {
     width: 48px;
   }
@@ -52,7 +56,7 @@ body {background-color: #FAFBFB;
     width: 100%;
     display: inline-flex;
     align-items: center;
-    padding: 0;
+    padding: 0 20px;
     margin: 0 auto;
   }
   
@@ -125,6 +129,7 @@ body {background-color: #FAFBFB;
     opacity: 1;
     width: 100%;
   }
+  /* end top bar */
    
 
   main {
@@ -134,8 +139,8 @@ body {background-color: #FAFBFB;
   }
 
 
-  /* Hero*/
 
+  /* Hero*/
   #hero {
     background-color: #FAFBFB;
     color: #191919;
@@ -149,10 +154,10 @@ body {background-color: #FAFBFB;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
+  /* Hero*/
 
 
   /* Headings styling*/
-
   h2, h3, h4 {
     line-height: 1.4;
   }
@@ -182,15 +187,26 @@ body {background-color: #FAFBFB;
     font-size: 18;
     font-weight: 600;
   }
+  /* Headings styling*/
+
+
 
   img {
     width: 100%;
   }
 
 
+  .column-1 {
+    width: 50%;
+  }
+
+  .column-2 {
+    width: 50%;
+  }
+
+
 
   /* General Button styling*/
-
   .button {
     display: inline-block;
     background-color: #B6D5F6;
@@ -209,6 +225,8 @@ body {background-color: #FAFBFB;
   .button:active {
     color: #191919;
   }
+  /* General Button styling*/
+
 
 
  /* Contact button */
@@ -231,6 +249,7 @@ body {background-color: #FAFBFB;
     padding: 12px;
     border: none
   }
+ /* Contact button */
 
 
 
@@ -238,24 +257,7 @@ body {background-color: #FAFBFB;
 
 
 
-  .row {
-    margin: 25px 0;
-    padding: 25px 0; 
-  }
-
-  .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-  #work .row { 
-    padding-bottom: 25px; border-bottom: 0.5px solid #467a82;
-  }
-
-
  /* Projects Navigation */
-
   .projects-nav {
     height: 50px;
     width: 100%;
@@ -319,6 +321,7 @@ body {background-color: #FAFBFB;
     opacity: 1;
     width: 100%;
   }
+ /* Projects Navigation */
 
 
  /* About Page*/
@@ -326,32 +329,31 @@ body {background-color: #FAFBFB;
     display: inline-block;
   }
 
-  #about-image {
-    padding: 80px 0 0 20px;
-    height: auto;
-  }
 
-  #about-h1 {
+  #about-hero-text > h1 {
     text-transform: uppercase;
     line-height: 1;
-    padding: 20px 0 0;
+    padding-bottom: 50px;
+    text-wrap: balance;
     
   }
   
-
-
   #about-h2-1 {
     text-align: right;
     padding: 30px 0 0 0;
   }
+ /* About Page*/
+
+
 
  /* Branding Page*/  
   #brand-guidelines {
     line-height: 1;
   }
 
- /* Footer */
 
+
+ /* Footer */
   #contact {
     background-color: #DCEBFC;
     color: #191919;
@@ -385,6 +387,7 @@ body {background-color: #FAFBFB;
     max-width: 100%;
     height: auto;
   }
+ /* Footer */
 
 
 
@@ -446,7 +449,6 @@ Medium devices (640px and larger)
  main {
     padding: 0 30px;
  }
-
 }
 
 
@@ -458,13 +460,13 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
 
  header {
-       text-align: unset;
-       padding: 20px 0 15px;
+  text-align: unset;
+  padding: 20px 0 15px;
  }
 
  nav {
-    width: auto;
-    float: right;
+  width: auto;
+  float: right;
  }
 
  body {
@@ -472,38 +474,28 @@ Large devices (1024px or larger)
  }
 
  main {
-    padding: 0 95px;
- }
-
- .col-lg-7 {
-  display: grid;
-    float: right;
-    padding: 10px;
-    width: 60%;
-  }
-
-  .col-lg-5 {
-    display: grid;
-    width: 40%;
-    float: left;
-    padding: 10px;
-  }
-
-  #about-hero {
-    width: 100%;
-    padding-bottom: 50px;
-  }
-
-
-  .col-xl-6 {
-    width: 50%;
+  padding: 105px 50px 0;
  }
 
  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
+  grid-template-columns: 50% 50%;
+  padding-bottom: 50px;
+  align-items: last baseline;
+ }
+
+
+ .row {
+  padding: 30px 0;
+ }
+
+ .container > #about-hero-text {
+  padding-right: 25px;
+ }
+
+
+
+
  }
 
 
@@ -524,24 +516,9 @@ Extra-large devices (1920px or larger)
   body {
     font-size: 1.2em;
   }
-  
+
   main {
-    padding: 0 70px;
-  }
-  
-  .col-xl-6 {
-    display: inline-flex;
-    width: 50%;
-  }
-  
-  #skill-tools {
-    display: inline-block;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 105px 70px 0;
   }
 }
 
