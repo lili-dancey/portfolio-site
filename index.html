@@ -24,13 +24,13 @@
           <nav>
             <ul>
               <li>
-                <a href="index.html"class="nav-link">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="projects.html"class="nav-link">Projects</a>
+                <a href="projects.html">Projects</a>
               </li>
               <li>
-                <a href="about.html"class="nav-link">About</a>
+                <a href="about.html">About</a>
               </li>
             </ul>
           </nav>
@@ -38,31 +38,36 @@
       </div> 
   </header>
   <main> <!-- start main -->
-    <div class="container" id="hero"> <!-- start hero -->
-          <picture>
-            <source srcset="img/hero/hero-mobile@2.png">
-            <img src="img/hero/hero-tablet@4.png" alt="iPhone mockups of Lili's work">
-          </picture>
-            <h1>
-              UX/UI designer
-            </h1>
-            <p>
-              Optimising your business through User-Centered Design. Turning your ideas into instinctual, simple designs.
-            </p>
-    </div> <!-- end hero -->
-    <div id="latest-projects"> <!-- start my work -->
-    <div class="container">
+    <div class="hero-container"> <!-- start hero -->
+      <div id="hero-text">
+        <h1>
+          UX/UI designer
+        </h1>
+        <p>
+          Optimising your business through User-Centered Design. <br>Turning your ideas into instinctual, simple designs.
+        </p>
+      </div>
+      <div>
+        <picture id="hero-image">
+          <source media="(min-width: 1024px)" srcset="img/hero/hero-desktop@4.png">
+          <source media="(min-width: 640px)" srcset="img/hero/hero-tablet@4.png"> 
+          <img src="img/hero/hero-mobile@2.png"
+          alt="iPhone mockups of Lili's work">
+        </picture>
+      </div>
+   </div> <!-- end hero -->
+   <div id="latest-projects"> <!-- start my work -->
         <h2>Latest 
           <br>Projects
         </h2>
-          <div> <!-- start project 1 -->
-            <div class="column-1"> <!-- open first column (used for image) -->
+        <div class="index-container"> <!-- start project 1 -->
+          <div> <!-- open first column (used for image) -->
               <picture>
                   <source srcset="img/wisewallet/wisewallet-mobile@2.png" media="(max-width:767px)">
                   <img src="img/wisewallet/wisewallet-tablet@4.png" alt="The cover image for a money saving tool app.">
               </picture>
           </div> <!-- end first column -->
-          <di class="column-2"> <!-- open second column (used for text) -->
+          <div > <!-- open second column (used for text) -->
               <h3>WiseWallet</h3> <!-- heading for the project -->
               <p> 
                 WiseWallet was a conceptual project created as a solution for users who are looking to save money for a particular goal.
@@ -72,15 +77,15 @@
               </p> <!-- end paragraph -->
               <a class="button" href="wisewallet.html" >View More</a> <!-- button or link label -->
           </div> <!-- end second column -->
-          </div> <!-- end project 1 -->
-          <div> <!-- start project 2 -->
-                <div class="column-1"> <!-- open first column (used for image) -->
+        </div> <!-- end project 1 -->
+        <div class="index-container"> <!-- start project 2 -->
+          <div> <!-- open first column (used for image) -->
                     <picture>
                         <source srcset="img/thegoodlav/thegoodlav-mobile@2.png" media="(max-width:767px)">
                         <img src="img/thegoodlav/thegoodlav-tablet@4.png" alt="The cover image for a Restroom-Finding App.">
                     </picture>
-                </div> <!-- end first column -->
-                <div class="column-2"> <!-- open second column (used for text) -->
+          </div> <!-- end first column -->
+          <div> <!-- open second column (used for text) -->
                     <h3>The GoodLav</h3> <!-- heading for the project -->
                     <p> 
                       The Goodlav was created as a restroom-finding solution. Providing information about the locations of restrooms, including their proximity, accessibility, and any associated amenities.
@@ -89,27 +94,27 @@
                         The GoodLav was a conceptual project and as part of the project brief, the app would be a native app for both iOS and Android. This required an understanding of the guidelines for both systems as well as correctly implementing the best practices and components for each. 
                     </p> <!-- end paragraph -->
                     <a href="#" class="button">View More</a> <!-- button or link label -->
-                </div> <!-- end second column -->
-          </div> <!-- end project 2 -->
-          <div> <!-- start project 3 -->
-                <div class="column-1"> <!-- open first column (used for image) -->
-                    <picture>
-                      <source srcset="img/v
-                      stayfind/stayfind-mobile@2.png" media="(max-width:767px)">
-                      <img src="img/stayfind/stayfind-tablet@4.png" alt="The cover image for a Restroom-Finding App.">
-                    </picture>
-                </div> <!-- end first column -->
-                <div class="column-2"> <!-- open second column (used for text) -->
-                    <h3>StayFind</h3> <!-- heading for the project -->
-                    <p> <!-- open project description -->
-                      StayFind is a location-based web app designed to optimise travel planning. It is an accommodation aggregator web app with up-front pricing, high quality imagery and price breakdowns.
-                    </p> <!-- end project descr. -->
-                    <p> <!-- open project skills -->
-                      The goals behind this was to design a responsive web app for location-based recommendations that meet the requirements of its users and solves the problems they face with existing location-based recommendation apps.
-                    </p> <!-- end project skills -->
-                    <a href="#" class="button">View More</a> <!-- button or link label -->
-                </div> <!-- end second column -->
-          </div> <!-- end project 3 -->
+          </div> <!-- end second column -->
+        </div> <!-- end project 2 -->
+        <div class="index-container"> <!-- start project 3 -->
+          <div> <!-- open first column (used for image) -->
+            <picture>
+              <source srcset="img/v
+              stayfind/stayfind-mobile@2.png" media="(max-width:767px)">
+              <img src="img/stayfind/stayfind-tablet@4.png" alt="The cover image for a Restroom-Finding App.">
+            </picture>
+          </div> <!-- end first column -->
+          <div> <!-- open second column (used for text) -->
+            <h3>StayFind</h3> <!-- heading for the project -->
+            <p> <!-- open project description -->
+              StayFind is a location-based web app designed to optimise travel planning. It is an accommodation aggregator web app with up-front pricing, high quality imagery and price breakdowns.
+            </p> <!-- end project descr. -->
+            <p> <!-- open project skills -->
+              The goals behind this was to design a responsive web app for location-based recommendations that meet the requirements of its users and solves the problems they face with existing location-based recommendation apps.
+            </p> <!-- end project skills -->
+            <a href="#" class="button">View More</a> <!-- button or link label -->
+          </div> <!-- end second column -->
+        </div> <!-- end project 3 -->
           <div> <!-- start project 4 -->
             <div> <!-- open first column (used for image) -->
                 <picture>
@@ -724,10 +729,10 @@
                 <a href="#" class="button">View More</a> <!-- button or link label -->
             </div> <!-- end second column -->
       </div> <!-- end project 4 -->
-          </div> <!-- end my work section -->
+  </div> <!-- end my work section -->
 </main><!-- end main -->
 <footer id="contact">
-  <div class="container"> <!-- start footer content -->
+  <div> <!-- start footer content -->
       <h2>Get In Touch</h2>
       <p>
           Do you have an idea that you want to bounce off of me? 
