@@ -1,1 +1,1 @@
-console.console.log("Hello world");
+console.log("Hi! Welcome to my UX/UI portfolio");
