@@ -35,82 +35,142 @@ body {background-color: #FAFBFB;
 
   /* Top Bar*/
 
-  header {
-    display: grid;
-    margin: 20px;
-    margin-right: 20px;
-    align-items: center;
+  a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+  }
+  
+  
+  /*======================================================
+                            Navbar
+    ======================================================*/
+    header {
+      text-align: unset;
+      position: fixed;
+      background-color: #FAFBFB;
+      width: 100%;
+      align-items: center;
+    }
+
+  
+   #navbar {
+    top: 0;
     width: 100%;
-    height: 10%;
-    grid-template-columns: 40% 20% 20% 20%;
-    background-color: #FAFBFB;
-    position: fixed;
+    height: 5%;
+    padding: 10px 20px;
+    overflow: auto;
+    align-items: center;
+   }
+  
+   nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
   }
 
+  .navtoggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+  }
 
   .logo {
+    left: 0;
     width: 48px;
-    height: 48px;
-    position: relative;
-  }
+    max-width: 64px;
+    padding: 10px 20px;
 
-  /* div.nav-menu {
-    display: inline-flex;
-    align-items: center;
-    width: 100%;
   }
 
   nav > ul {
-    width: 100%;
-    list-style-type: none;
-    text-transform: uppercase;
-    align-items: right;
-  }
-
-
-  nav > ul > li > a {
-    display: inline-flex;
     align-items: center;
-    color: #191919;
-    font-weight: 500;
-    margin: 0px 20px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-  }
-  nav > ul > li > a:before, nav > ul > li > a:after {
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-    content: '';
-    background: #000000;
-    transition: all 0.3s;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 
-  nav > ul > li > a:before
-  {
-    left: 0px;
-    top: 0px;
-  }
 
-  nav > ul > li > a:after
-  {
-    right: 0px;
-    bottom: 0px;
-  }
+    nav > ul > li > a {
+      color: #191919;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+      margin: 0px 10px;
+      padding: 10px 10px;
+    }
 
-  nav > ul > li > a:hover:before, 
-  nav > ul > li > a:hover:after
-  {
-    opacity: 1;
-    width: 100%;
-  }
+
+    .navtoggle ul li a.icon {
+      position: absolute;
+      right: 0;
+      display: inline;
+      top: 30px;
+      bottom: 20px;
+      padding: 10px 20px;
+      font-size: 24px;
+    }
+
+    .navtoggle.responsive li  {
+      display: block;
+    }
+
+    .navtoggle, .navtoggle.responsive {
+      position: relative;
+    }
+
+    .navtoggle li:not(:last-child) {
+      display: none;
+    }
+
+    .navtoggle.responsive nav {
+      padding: 24px 0 0;
+    }
+
+    .navtoggle.responsive .logo {
+      display: none;
+    }
+
+    .navtoggle.responsive .navlinks {
+      padding-top: 40px;
+      text-align: right;
+    }
+
+
+    .navtoggle.responsive li  {
+      display: block;
+      height: fit-content;
+      width: 100%;
+      padding: 10px 0;
+      background-color: #fafbfb61;
+    }
+    
+    .navtoggle.responsive li:last-child  {
+      padding: 0 0 10px;
+    }
+
+
+
+  
+
+  
+    .nav-link {
+      transition: 0.7s ease;
+    }
+  
+  
+
+  
+  
   /* end top bar */
    
 
   main {
-    padding-top: 80px;
+    padding-top: 115px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -389,19 +449,104 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
  header {
     text-align: unset;
-    padding: 20px 0 15px;
     position: fixed;
  }
+
+ #navbar {
+  top: 0;
+  width: 100%;
+  height: 5%;
+  padding: 10px 30px;
+  overflow: auto;
+ }
+
+ nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+ .logo {
+  width: 56px;
+  padding: 10px 30px;
+
+}
+
+.navtoggle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
 
 
  #hero-image {
   max-height: 200px;
  }
+ 
 
- nav {
-    width: auto;
-    float: right;
- }
+ .navtoggle li:not(:last-child) {
+  display: inline-block;
+  align-items: center;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+
+nav > ul {
+  right: 0;
+  align-items: center;
+}
+
+/* Full Nav menu transitions */
+  
+nav > ul > li > a {
+  color: #191919;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+nav > ul > li > a::before, 
+nav > ul > li > a::after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #000000;
+  transition: all 0.3s;
+}
+
+nav > ul > li > a:before
+{
+  left: 0px;
+  top: 0px;
+}
+
+nav > ul > li > a:after
+{
+  right: 0px;
+  bottom: 0px;
+}
+
+nav > ul > li > a:hover:before, 
+nav > ul > li > a:hover:after
+{
+  opacity: 1;
+  width: 100%;
+}
 
  body {
     font-size: 1.125em;
@@ -421,16 +566,95 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
- header {
-  text-align: unset;
-  padding: 20px 0 15px;
-  position: fixed;
+  header {
+    text-align: unset;
+    position: fixed;
+ }
+
+ #navbar {
+  top: 0;
+  width: 100%;
+  height: 5%;
+  padding: 10px 50px;
+  overflow: auto;
  }
 
  nav {
-  width: auto;
-  float: right;
- }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+ .logo {
+  left: 0;
+  width: 56px;
+  padding: 10px 50px;
+
+}
+
+.navtoggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+
+nav > ul {
+  right: 0;
+  align-items: center;
+}
+
+/* Full Nav menu transitions */
+  
+nav > ul > li > a {
+  color: #191919;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+nav > ul > li > a::before, 
+nav > ul > li > a::after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #000000;
+  transition: all 0.3s;
+}
+
+nav > ul > li > a:before
+{
+  left: 0px;
+  top: 0px;
+}
+
+nav > ul > li > a:after
+{
+  right: 0px;
+  bottom: 0px;
+}
+
+nav > ul > li > a:hover:before, 
+nav > ul > li > a:hover:after
+{
+  opacity: 1;
+  width: 100%;
+}
 
  body {
     font-size: 1.15em;
@@ -513,6 +737,67 @@ Extra-large devices (1920px or larger)
     width: auto;
     float: right;
    }
+
+   .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+   nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul {
+    display: inline-flex;
+  }
+
+  /* Full Nav menu transitions */
+  
+  nav > ul > li > a {
+    color: #191919;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+  
+  nav > ul > li > a::before, 
+  nav > ul > li > a::after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #000000;
+    transition: all 0.3s;
+  }
+
+  nav > ul > li > a:before
+  {
+    left: 0px;
+    top: 0px;
+  }
+
+  nav > ul > li > a:after
+  {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  nav > ul > li > a:hover:before, 
+  nav > ul > li > a:hover:after
+  {
+    opacity: 1;
+    width: 100%;
+  }
   
    body {
       font-size: 1.15em;
@@ -578,6 +863,4 @@ Extra-large devices (1920px or larger)
     max-height: 600px;
    }
   
-   }
-
-
+  }

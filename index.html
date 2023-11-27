@@ -5,24 +5,46 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94af11a5ed.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lili B Dancey</title>
+    <title>Lili Dancey</title>
 </head>
   <body>
-  <header>
-        <div class="logo"> <!--Logo-->
+    <header>
+      <!--Logo-->
+      <div class="navbar">
+        <div class="navtoggle" id="myNavtoggle">
           <a href="index.html">
-            <img 
-            src="img/logo/dancey-lili-logo-1px.svg"
-            alt="Lili Dancey logo">
-          </a>
-        </div>
-        <div> <a href="index.html">Home</a> </div>
-        <div> <a href="projects.html">Projects</a> </div>
-        <div> <a href="about.html">About</a> </div>
-  </header>
+            <img class="logo"
+                src="img/logo/dancey-lili-logo-1px.svg"
+                alt="Lili Dancey logo"
+            >
+          </a>  
+          <div class="navlinks"> <!--start Nav-->
+           <nav>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <i class="fas fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+           </nav>
+          </div> <!--end Nav-->
+        </div> 
+      </div> 
+    </header>
   <main> <!-- start main -->
     <div class="hero-container"> <!-- start hero -->
       <div id="hero-text">
@@ -131,6 +153,7 @@
       <p>Copyright Lili Dancey 2023-2024</p>
   </div> <!-- end footer content -->
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

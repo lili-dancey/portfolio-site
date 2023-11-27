@@ -9,35 +9,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94af11a5ed.js" crossorigin="anonymous"></script>
     <title>Lili Dancey</title>
 </head>
   <body>
     <header>
         <!--Logo-->
-              <div class="navbar">
-                  <a href="index.html">
-                      <img class="logo"
-                          src="img/logo/dancey-lili-logo-1px.svg"
-                          alt="Lili Dancey logo"
-                      >
-                  </a>
-          <div id="nav-menu"> <!--start Nav-->
-            <nav>
+        <div class="navbar">
+          <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html">
+              <img class="logo"
+                  src="img/logo/dancey-lili-logo-1px.svg"
+                  alt="Lili Dancey logo"
+              >
+            </a>  
+            <div class="navlinks"> <!--start Nav-->
+             <nav>
               <ul>
                 <li>
-                  <a href="index.html"class="nav-link">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <li>
-                  <a href="projects.html"class="nav-link">Projects</a>
+                  <a href="projects.html">Projects</a>
                 </li>
                 <li>
-                  <a href="about.html"class="nav-link">About</a>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                    <i class="fas fa-bars"></i>
+                  </a>
                 </li>
               </ul>
-            </nav>
-          </div> <!--end Nav--> 
+             </nav>
+            </div> <!--end Nav-->
+          </div> 
         </div> 
-    </header>
+      </header>
 <main>
     <div> <!-- WiseWallet Project-->
         <picture>
@@ -232,6 +240,7 @@
         <p>Copyright Lili Dancey 2023-2024</p>
     </div> <!-- end footer content -->
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
